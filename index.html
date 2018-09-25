@@ -4,86 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Instagram</title>
-    <style>
-        body{
-            margin: 0;
-            font-family: Arial;
-            background: rgba(231, 218, 218, 0.527);
-        }
-        .header-container{
-            background: white;
-            border-top:1px solid rgb(112, 107, 107);
-            border-bottom: 1px solid rgb(114, 107, 107);
-            padding: 10px;
-            margin-bottom: 20px;
-            margin-top:5px; 
-            display: grid;
-            grid-template-rows:2;
-        }
-        .item{
-            display: grid;
-            width:50px;
-            height:50px;
-            border: 1px solid red;
-            padding: 5px;
-            margin: 5px;
-            grid-gap: 5px;
-        }
-        .post{
-            cursor:pointer;
-            position: relative;             
-            display: block;   
-        }
-        .post-image{            
-            margin:0;          
-        }
-
-        .post-image > img{
-            width:100%;
-            vertical-align: top;
-        }
-
-        .post-overlay{
-            background: rgba(0, 0, 0, 0.404);
-            position:absolute;
-            left: 0;
-            right: 0;
-            bottom:0;
-            top:0;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            color:white;
-            text-align: center;
-        }
-        .post:hover .post-overlay{
-            display: flex;
-        }
-
-        .post-list{
-            display: grid;
-            grid-template-columns:repeat(3, minmax(100px, 298px));
-            justify-content: center;
-            grid-gap: 28px;
-            transition:1000ms ;
-        }
-
-        .post-likes,
-        .post-comments{
-            width: 80px;
-            margin: 5px;
-            font-weight: bold;
-            text-align: center;
-            display: inline-block;
-        }
-
-        @media screen and (max-width:768px){
-            .post-list{
-                grid-gap: 2px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Instagram</title>   
 </head>
 <body>
     <header class="header-container">
@@ -100,11 +22,7 @@
         <figure class="perfil">
             <img src="image/perfil.jpg" alt="perfil">
         </figure> -->
-        <div class="item">item #1</div>
-        <div class="item">item #2</div>
-        <div class="item">item #3</div>
-        <div class="item">item #4</div>
-        <div class="item">item #5</div>
+        
     </header>
     <section class="post-list">
         <a href="" class="post">
